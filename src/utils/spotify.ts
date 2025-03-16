@@ -236,7 +236,7 @@ export const addTracksToPlaylist = async (
 // Get Spotify authorization URL
 export const getAuthUrl = (): string => {
   const clientId = import.meta.env.VITE_SPOTIFY_CLIENT_ID || "";
-  const redirectUri = window.location.origin;
+  const redirectUri = window.location.origin + "/trackswipe/";
   const scopes = [
     "streaming",
     "user-read-email",
