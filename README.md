@@ -28,7 +28,7 @@ A Tinder-style app for discovering music from Spotify playlists. Swipe left to s
 
 ## Technologies Used
 
-- React
+- React (Vite)
 - TypeScript
 - Tailwind CSS
 - Spotify Web API
