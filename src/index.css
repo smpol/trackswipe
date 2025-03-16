@@ -1,0 +1,37 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Tinder-style swipe animations */
+@keyframes swipeLeft {
+  from {
+    transform: translateX(0) rotate(0deg);
+  }
+  to {
+    transform: translateX(-1000px) rotate(-30deg);
+    opacity: 0;
+  }
+}
+
+@keyframes swipeRight {
+  from {
+    transform: translateX(0) rotate(0deg);
+  }
+  to {
+    transform: translateX(1000px) rotate(30deg);
+    opacity: 0;
+  }
+}
+
+.animate-exit-left {
+  animation: swipeLeft 0.3s forwards ease-out;
+}
+
+.animate-exit-right {
+  animation: swipeRight 0.3s forwards ease-out;
+}
+
+/* Prevent text selection during swipe */
+.card-container {
+  user-select: none;
+}
