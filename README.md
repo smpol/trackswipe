@@ -21,7 +21,7 @@ A Tinder-style app for discovering music from Spotify playlists. Swipe left to s
 
 1. Clone this repository
 2. Create a Spotify Developer App at https://developer.spotify.com/dashboard
-3. Add `http://localhost:5173` to the Redirect URIs in your Spotify App settings
+3. Add `http://localhost:5173/trackswipe/` to the Redirect URIs in your Spotify App settings
 4. Copy `.env.example` to `.env` and add your Spotify Client ID
 5. Install dependencies: `npm install`
 6. Start the development server: `npm run dev`
